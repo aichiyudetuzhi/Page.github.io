@@ -1,0 +1,12 @@
+{
+  "name": "staticPage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aichiyudetuzhi/Page.github.io",
+  "author": "fjz <you@example.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  }
+}
