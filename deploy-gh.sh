@@ -3,6 +3,7 @@
 set -e
 
 # 生成静态文件
+cd ./docs/.vuepress/dist
 # 进入生成的文件夹
 
 # 如果是发布到自定义域名
@@ -10,7 +11,7 @@ echo 'http://www.huoguohaochi.fun/' > CNAME
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'update'
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
@@ -19,5 +20,5 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 
 # 把上面的 <USERNAME> 换成你自己的 Github 用户名，<REPO> 换成仓库名，比如我这里就是：
-git push -f git@github.com:aichiyudetuzhi/Page.github.io.git master:main
+git push -f git@github.com:aichiyudetuzhi/Page.github.io.git master:master
 cd -
